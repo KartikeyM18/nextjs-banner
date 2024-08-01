@@ -33,7 +33,9 @@ export default function Home() {
         </div>
       </div>
 
-      {editingBanner && <EditBanner {...editingBanner} onSave={handleSave}></EditBanner>}
+      {editingBanner && (
+        <EditBanner {...(editingBanner as object)} onSave={handleSave}></EditBanner>
+        )}
     </div>
   );
 }

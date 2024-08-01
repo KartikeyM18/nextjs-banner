@@ -2,12 +2,12 @@ import { useState } from "react";
 import { AdBanner } from "./AdBanner";
 
 interface EditBannerProps {
-    id: number,
-    title: string;
-    description: string;
-    cta: string;
-    image: string;
-    background: string;
+    id?: any,
+    title?: any;
+    description?: any;
+    cta?: any;
+    image?: any;
+    background?: any;
     onSave: (data: any) => void;
 }
 
